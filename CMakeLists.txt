@@ -72,9 +72,9 @@ add_executable(TestDCT "${EXAMPLEDIR}/test_imagephash.cpp")
 target_link_libraries (TestDCT pHash)
 install(TARGETS TestDCT DESTINATION bin)
 
-add_executable(TestRadish "${EXAMPLEDIR}/test_radish.cpp")
-target_link_libraries (TestRadish pHash)
-install(TARGETS TestRadish DESTINATION bin)
+#add_executable(TestRadish "${EXAMPLEDIR}/test_radish.cpp")
+#target_link_libraries (TestRadish pHash)
+#install(TARGETS TestRadish DESTINATION bin)
 
 #add_executable(TestBMB "${EXAMPLEDIR}/test_bmbimagehash.cpp")
 #target_link_libraries (TestBMB pHash)
