@@ -66,6 +66,7 @@ install(TARGETS pHash DESTINATION lib)
 
 set(EXAMPLEDIR examples)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 if(HAVE_IMAGE_HASH)
 add_executable(TestDCT "${EXAMPLEDIR}/test_imagephash.cpp")
 target_link_libraries (TestDCT pHash)
