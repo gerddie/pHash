@@ -102,6 +102,8 @@ target_link_libraries (TestVideoHash pHash)
 install(TARGETS TestVideoHash DESTINATION bin)
 endif()
 
+add_subdirectory(tools)
+
 include (InstallRequiredSystemLibraries)
 
 set(CPACK_GENERATOR "TGZ")
