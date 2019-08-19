@@ -261,7 +261,7 @@ AS_IF([test "x$enable_image_hash" != "xno" -o "x$enable_video_hash" != "xno"],
 
 AS_IF([test "x$with_fftw" != "xno"],
   AC_CHECK_LIB([fftw3], [fftw_plan_dft_r2c_1d],
-    [ CPPFLAGS="$CPPFLAGS -Dcimg_use_fftw3" LIBS="$LIBS -lfftw3" ],
+    [ CPPFLAGS="$CPPFLAGS -Dcimg_use_fftw3" LIBS="$LIBS -lfftw3_threads -lfftw3" ],
     AS_IF([test "x$with_fftw" = "xyes"], AC_MSG_ERROR([FFTW support requested but library not found]))
   )
 )
